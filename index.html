@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Tower Of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="options">
+        <button class="btn" id="solve">Solve</button>
+        <button class="btn" id="reset">Reset</button>
+        <select id="numOfTiles">
+            <option value="5">5 tiles</option>
+            <option value="6">6 tiles</option>
+            <option value="7">7 tiles</option>
+            <option value="8">8 tiles</option>
+            <option value="9">9 tiles</option>
+            <option value="10">10 tiles</option>
+        </select>
+        <p>
+            <strong>
+                Counter:
+                <span id="counter">0</span>
+            </strong>
+        </p>
+    </div>
+    <div class="towers">
+        <div id="tower1" class="tower">
+            <div class="tower__vertical"></div>
+            <div class="tower__horizontal"></div>
+            <div class="tower__container">
+                <div class="tile" data-weight="1"></div>
+                <div class="tile" data-weight="2"></div>
+                <div class="tile" data-weight="3"></div>
+                <div class="tile" data-weight="4"></div>
+                <div class="tile" data-weight="5"></div>
+            </div>
+        </div>
+        <div id="tower2" class="tower">
+            <div class="tower__vertical"></div>
+            <div class="tower__horizontal"></div>
+            <div class="tower__container"></div>
+        </div>
+        <div id="tower3" class="tower">
+            <div class="tower__vertical"></div>
+            <div class="tower__horizontal"></div>
+            <div class="tower__container"></div>
+        </div>
+    </div>
 </body>
+<script src="app.js"></script>
+
 </html>
